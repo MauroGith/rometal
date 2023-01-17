@@ -160,6 +160,7 @@ header .header-content {
 footer {
   background-color: #F2F2F2;
   padding: max(10px, 3vw) max(20px, 6vw);
+  margin-top: max(20px, 1vw);
 }
 
 .footer-content {
@@ -1087,6 +1088,179 @@ section.gallery .gallery-slider {
   border-radius: max(10px, 1.5vw);
 }
 
+/* Tela 4 */
+section.aluminum .aluminum-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40vw;
+}
+section.aluminum .aluminum-info .aluminum-text{
+  width: 40%;
+}
+section.aluminum .aluminum-info .aluminum-text .products-a{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+section.aluminum .aluminum-info .aluminum-text .products-a i{
+  font-size: max(17px, 1vw);
+  color: black;
+  padding-right: max(5px, 1.3vw);
+}
+section.aluminum .aluminum-info .aluminum-text .products-a a{
+  text-decoration: none;
+  font-size: max(10px, .7vw);
+  text-transform: uppercase;
+  letter-spacing: max(1px, .3vw);
+  color: #989898;
+}
+.aluminum-info .aluminum-text h2{
+  font-size: max(17px, 3vw);
+  padding: max(10px, 1.5vw) 0;
+}
+.aluminum-info .aluminum-text p {
+  font-size: max(14px, 1vw);
+  color: #989898;
+  font-weight: lighter;
+}
+.aluminum-info .aluminum-text .confirm-a{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: max(10px, 1.5vw) 0;
+}
+.aluminum-info .aluminum-text .confirm-a i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: max(14px, 1.4vw);
+  border: max(1px, .1vw) solid #dbf7fa;
+  background-color: #dbf7fa;
+  height: max(20px, 3.5vw);
+  width: max(20px, 3.5vw);
+  margin-right: max(5px, 0.8vw);
+  border-radius: 50%;
+}
+.aluminum-info .aluminum-text .confirm-a a{
+  font-size: max(14px, 1vw);
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+section.aluminum .aluminum-info .aluminum-bg{
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 81%;
+  width: 50%;
+}
+section.products-more .check-below {
+  background-color: #000051;
+  border-bottom: max(1px, .1vw) solid #0f0f5b;
+}
+section.products-more .check-below h2{
+  font-size: max(20px, 2.2vw);
+  padding: max(10px, 5vw) 0 max(10px, 5vw) max(10px, 5vw);
+  color: white;
+  max-width: 40%;
+}
+section.products-more .products-wrapper {
+  background-image: linear-gradient(to left, #000051 30%, white 10%);
+  padding-top: max(20px, 4vw);
+  height: 105vw;
+}
+section.products-more .products-wrapper .products-applications{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  background-color: white;
+  border-left: max(1px, .5vw) solid #05c3dd;
+  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+  height: 17vw;
+  margin: max(10px, 2vw);
+}
+.products-wrapper .products-applications .applications{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: max(10px, 2vw);
+  min-width: max(100px, 20vw);
+}
+.products-wrapper .products-applications .text-info{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 0 max(10px, 2vw);
+}
+.products-wrapper .products-applications .text-info h3{
+  font-size: max(20px, 2vw);
+  font-weight: bolder;
+}
+.products-wrapper .products-applications .text-info span{
+  font-size: max(14px, 1vw);
+  color: #989898;
+  padding: 0 max(10px, 2vw);
+  min-width: max(100px, 20vw);
+}
+.products-wrapper .products-applications .text-info i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: max(14px, 1vw);
+  border: max(1px, 0.1vw) solid #e2e2e2;
+  height: max(20px, 2.5vw);
+  width: max(20px, 4vw);
+  border-radius: 50%;
+}
+/* Tela 4 */
+
+/* Tela 5 */
+section.options .title-options {
+  background-color: #05c3dd;
+}
+section.options .title-options h2{
+  font-size: max(20px, 2.2vw);
+  padding: max(10px, 5vw) 0 max(10px, 5vw) max(10px, 5vw);
+  color: white;
+  max-width: 40%;
+}
+section.options .options-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+section.options .options-wrapper .single-option{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: max(20px, 3vw) max(10px, .8vw);
+  min-width: max(100px, 20vw);
+  min-height: max(100px, 20vw);
+  width: 30%;
+  position: relative;
+}
+section.options .options-wrapper .single-option .option-text{
+  position: absolute;
+  top: 80%;
+  left: 7%;
+  background-color: white;
+  width: 85%;
+  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+  padding: max(7px, 1.5vw);
+}
+.options-wrapper .single-option .option-text p {
+  font-size: max(15px, 1.5vw);
+  font-weight: bolder;
+  padding-bottom: max(5px, .8vw);
+}
+.options-wrapper .single-option .option-text a{
+  font-size: max(10px, .9vw);
+  font-weight: bold;
+  color: black;
+}
+/* Tela 5 */
 
 
 @media screen and (max-width: 980px) {
