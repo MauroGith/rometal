@@ -1307,6 +1307,12 @@ section.products-more .products-wrapper .products-applications{
 }
 /* Tela 4 */
 
+.aluminum-text .text-info {
+  line-height: max(10px, 1.5vw);
+  font-size: max(14px, 1.3vw);
+}
+
+
 /* Tela 5 */
 section.options .title-options {
   background-color: #05c3dd;
@@ -1355,6 +1361,7 @@ section.options .options-wrapper .single-option .option-text:hover{
   color: black;
 }
 /* Tela 5 */
+
 
 /* Tela 7 */
 section.all-downloads{
@@ -1421,6 +1428,8 @@ section.all-downloads .download-category .download-table {
   padding-left: max(2px, .4vw);
 }
 /* Tela 7 */
+
+
 
 /* Tela 10 */
 section.measurements-area span{
@@ -1593,6 +1602,8 @@ section.representatives-all .representatives-info{
 }
 
 /* Tela 11 */
+
+
 /* tela 8 */
 section.form-contact form {
   background-color: white;
