@@ -1524,6 +1524,9 @@ label:active:after {
 /* Tela 10 */
 
 /* Tela 11 */
+section.representatives-all{
+  margin: max(20px, 2vw);
+}
 section.representatives-all .filter-wrapper{
   display: flex;
   align-items: center;
@@ -1556,14 +1559,17 @@ section.representatives-all .representatives-info{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: max(500px, 65vw);
-  margin: 0 auto;
+  /* max-width: max(500px, 70vw); */
+  /* margin: 0 auto; */
 }
 .representatives-info .single-info {
-  width: 31%;
-  padding: max(20px, 2.5vw) max(10px, 1.4vw);
-  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+  width: 33.3%;
+  padding: 0 max(10px, 1vw);
   margin-bottom: max(15px, 1.5vw);
+}
+.representatives-info .single-info .info-wrapper{
+  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+  padding: max(20px, 2.5vw) max(10px, 1.4vw);
 }
 .representatives-info .single-info h3{
   font-size: max(15px, 1.5vw);
