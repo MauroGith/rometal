@@ -1356,6 +1356,62 @@ section.options .options-wrapper .single-option .option-text:hover{
 }
 /* Tela 5 */
 
+/* Tela 6 */
+section.our-kits {
+  margin-top: max(20px, 5vw);
+  background-color: #f2f2f2;
+  padding: max(15px, 1.5vw) 0;
+}
+section.our-kits h2{
+  font-size: max(24px, 2vw);
+  text-align: center;
+  padding: max(20px, 4vw);
+}
+section.our-kits .wrapper-kits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-wrapper{
+  padding: 0 max(15px, 1vw);
+}
+section.our-kits .single-kit {
+  background-color: white;
+  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+  padding: max(20px, 4vw) max(10px, 1.4vw);
+  margin-bottom: max(10px, 1vw);
+  min-height: max(190px, 2vw);
+  text-align: center;
+}
+section.our-kits  .single-kit img{
+  width: 100%;
+}
+section.our-kits  .single-kit h3{
+  padding: max(10px, 1.5vw) 0;
+  font-size: max(14px, 1.3vw);
+  border-top: max(1px, .2vw) solid #bfeff6;
+}
+.our-kits .products-arrow {
+  margin: 0 auto;
+  width: max(110px, 10vw);
+  padding: max(15px, 2vw) 0;
+}
+.related{
+  background-color: white !important;
+}
+.wrapper-relateds{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.related span {
+  font-size: max(10px, .7vw);
+  text-transform: uppercase;
+  letter-spacing: max(1px, .3vw);
+  color: #989898;
+}
+/* Tela 6 */
+
 /* Tela 7 */
 section.all-downloads{
   background-image: linear-gradient(to left, #F2F2F2 30%, white 10%);
