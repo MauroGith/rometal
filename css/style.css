@@ -1356,7 +1356,35 @@ section.options .options-wrapper .single-option .option-text:hover{
 }
 /* Tela 5 */
 
+.title-bg {
+  background-color: #000051;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.title-bg .title {
+  width: 50%;
+  padding-left: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-bg h3 {
+  width: 90%;
+  font-size: max(30px, 5vw);
+  color: white;
+}
+
+.title-bg .bg {
+  min-height: 25vw;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* Tela 7 */
 section.all-downloads{
