@@ -1443,13 +1443,13 @@ section.measurements-area .form-info h2{
   padding: 0 max(7px, 1.3vw);
   
 }
-input[type=checkbox]{
+.form-info input[type=checkbox]{
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-label {
+.form-info label {
   cursor: pointer;
   text-indent: -9999px;
   width: max(20px, 8vw);
@@ -1460,7 +1460,7 @@ label {
   position: relative;
 }
 
-label:after {
+.form-info label:after {
   content: '';
   position: absolute;
   top: 10%;
@@ -1472,16 +1472,16 @@ label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
+.form-info input:checked + label {
   background: #05c3dd;
 }
 
-input:checked + label:after {
+.form-info input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
 
-label:active:after {
+.form-info label:active:after {
   width: 130px;
 }
 
