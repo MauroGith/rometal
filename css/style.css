@@ -160,7 +160,6 @@ header .header-content {
 footer {
   background-color: #F2F2F2;
   padding: max(10px, 3vw) max(20px, 6vw);
-  margin-top: max(20px, 1vw);
 }
 
 .footer-content {
@@ -1088,6 +1087,99 @@ section.gallery .gallery-slider {
   border-radius: max(10px, 1.5vw);
 }
 
+/* Tela 3 */
+.all-products{
+  display: flex;
+  flex-wrap: wrap;
+  padding: max(20px, 4.5vw) max(40px, 7vw) max(20px, 5vw) max(40px, 7vw);
+  justify-content: space-between;
+}
+.all-products .slide-wrapper{
+  width: 31%;
+  margin: max(10px, 1vw) 0;
+}
+
+.slide-wrapper {
+  height: max(43vw, 60vh);
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-wrapper .slide-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+
+.slide-wrapper .slide-bg:hover {
+  transform: scale(1.1);
+}
+
+.toggle-arrow {
+  transition: 1s;
+}
+
+.slide-wrapper .slide-bg:hover .toggle-arrow{
+  opacity: 0;
+  display: none;
+}
+  
+.slide-bg .text-wrapper {
+  color: white;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, transparent 40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.slide-bg .text-wrapper .hidden-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1.5s;
+  height: 0;
+}
+
+.slide-wrapper .slide-bg:hover .hidden-text{
+  height: 38%;
+}
+
+.slide-bg .text-wrapper h2 {
+  font-size: max(15px, 2vw);
+  padding-bottom: max(10px, 1vw);
+}
+
+.slide-bg .text-wrapper i {
+  font-size: max(10px, 1.1vw);
+  margin: max(10px, 1vw) 0;
+}
+
+.slide-bg .text-wrapper p {
+  font-size: max(13px, 1vw);
+  padding: max(10px, 1.5vw);
+  width: 90%;
+}
+
+.slide-bg .text-wrapper a {
+  font-size: max(14px, 1vw);
+  color: white;
+
+}
+/* Tela 3 */
+
 /* Tela 4 */
 section.aluminum .aluminum-info{
   display: flex;
@@ -1191,7 +1283,6 @@ section.products-more .products-wrapper .products-applications{
 .products-wrapper .products-applications .text-info{
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   padding: 0 max(10px, 2vw);
 }
 .products-wrapper .products-applications .text-info h3{
@@ -1229,7 +1320,6 @@ section.options .title-options h2{
 section.options .options-wrapper{
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
 }
 section.options .options-wrapper .single-option{
   background-position: center;
@@ -1249,6 +1339,10 @@ section.options .options-wrapper .single-option .option-text{
   width: 85%;
   box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
   padding: max(7px, 1.5vw);
+  
+}
+section.options .options-wrapper .single-option .option-text:hover{
+  border: max(1px, .5vw) solid #05c3dd;
 }
 .options-wrapper .single-option .option-text p {
   font-size: max(15px, 1.5vw);
@@ -1262,6 +1356,243 @@ section.options .options-wrapper .single-option .option-text{
 }
 /* Tela 5 */
 
+/* Tela 7 */
+section.all-downloads{
+  background-image: linear-gradient(to left, #F2F2F2 30%, white 10%);
+  padding: max(20px, 5vw);
+}
+section.all-downloads .download-category{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: max(10px, 1vw) 0;
+}
+section.all-downloads .download-category h3{
+  font-size: max(20px, 2.3vw);
+  font-weight: bolder;
+  text-align: center;
+  width: 25%;
+}
+section.all-downloads .download-category .download-table {
+  width: 75%;
+  padding: max(15px, 2vw);
+  background-color: white;
+  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+}
+.download-category .download-table thead{
+  text-decoration: none;
+  font-size: max(10px, .7vw);
+  text-transform: uppercase;
+  letter-spacing: max(1px, .3vw);
+  color: #989898; 
+}
+.download-category .download-table thead td{
+  padding-bottom: max(5px, .6vw);
+}
+
+.download-category .download-table tbody td{
+  border-bottom: max(1px, .1vw) solid #f4f4f4;
+  padding: max(7px, 1vw) 0;
+}
+.download-category .download-table tbody td.d-flex{
+  display: flex;
+}
+.download-category .download-table tbody td img{
+  max-width: max(4.5vw, 55px);
+  margin-right: max(5px, 1vw);
+}
+.download-category .download-table tbody td p{
+  font-size: max(14px, 1vw);
+  font-weight: bolder;
+}
+.download-category .download-table tbody td span{
+  font-size: max(12px, 1vw);
+  color: #989898;
+}
+.download-category .download-table tbody td a{
+  font-size: max(12px, 1vw);
+  text-decoration: none;
+  background-color: #000051;
+  color: white;
+  padding: max(7px, 1vw)max(10px, 1.5vw);
+  border-radius: 30px;
+}
+.download-category .download-table tbody td a i{
+  padding-left: max(2px, .4vw);
+}
+/* Tela 7 */
+
+/* Tela 10 */
+section.measurements-area span{
+  display: block;
+  font-size: max(10px, .6vw);
+  letter-spacing: .2vw;
+  color: #5e5e5e;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: max(15px, 4vw);
+}
+section.measurements-area .form-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: max(10px, 2vw) 0;
+}
+section.measurements-area .form-info h2{
+  font-size: max(15px, 1.8vw);
+  padding: 0 max(7px, 1.3vw);
+  
+}
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: max(20px, 8vw);
+  height: max(10px, 3.1vw);
+  background: #05c3dd;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  width: max(15px, 3.5vw);
+  height: max(10px, 2.4vw);
+  background: white;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #05c3dd;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}
+
+.measurements-form form {
+  max-width: 60%;
+  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+  margin: max(20px, 4vw) auto;
+  padding: max(20px, 3vw);
+}
+.measurements-form form .form-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.measurements-form form .form-wrapper .d-30{
+  width: 33%;
+}
+.measurements-form form .form-wrapper p{
+  font-size: max(11px, .9vw);
+  font-weight: bold;
+}
+.measurements-form .form-wrapper  input[type=text] {
+  width: 93%;
+  font-size: max(13px, 1vw);
+  margin: max(10px, 1.2vw) 0;
+  padding: max(10px, 1.4vw);
+  outline: none;
+  border: max(1px, 0.1vw) solid #d5d5d5;
+  background-color: #f2f2f2;
+}
+.measurements-form input[type=submit] {
+  width: 100%;
+  font-size: max(10px, 1vw);
+  color: #f4f4f4;
+  background-color: #000051;
+  padding: max(10px, 1.4vw);
+  margin: max(10px, 1.5vw) 0;
+}
+/* Tela 10 */
+
+/* Tela 11 */
+section.representatives-all{
+  margin: max(20px, 2vw);
+}
+section.representatives-all .filter-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: max(20px, 4vw);
+}
+.filter-wrapper .filter {
+  margin-right: max(10px, 1.2vw);
+}
+.filter-wrapper .filter select{
+  background-color: #f2f2f2;
+  color: #a4a4a4;
+  border: max(1px, .1vw) solid #e5e5e5;
+  min-height: max(20px, 3.5vw);
+  min-width: max(60px, 17vw);
+  font-size: max(12px, .8vw);
+  padding: 0 max(5px, .5vw);
+}
+
+section.representatives-all .filter-wrapper button{
+  min-width: max(60px, 17vw);
+  min-height: max(20px, 3.5vw);
+  font-size: max(12px, .8vw);
+  background-color: #000051;
+  color: white;
+  cursor: pointer;
+}
+section.representatives-all .representatives-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* max-width: max(500px, 70vw); */
+  /* margin: 0 auto; */
+}
+.representatives-info .single-info {
+  width: 33.3%;
+  padding: 0 max(10px, 1vw);
+  margin-bottom: max(15px, 1.5vw);
+}
+.representatives-info .single-info .info-wrapper{
+  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+  padding: max(20px, 2.5vw) max(10px, 1.4vw);
+}
+.representatives-info .single-info h3{
+  font-size: max(15px, 1.5vw);
+  color: #181818;
+  padding-bottom: max(15px, 1.8vw);
+}
+.representatives-info .single-info i{
+  font-size: max(14px, 1.2vw);
+  color: #05bcd5;
+  padding-right: max(10px, 1vw);
+}
+
+.representatives-info .single-info p{
+  color: #868686;
+  font-size: max(12px, .9vw);
+}
+.representatives-info .single-info .text-icon{
+  display: flex;
+  /* align-items: center; */
+  padding: max(7px, .5vw) 0;
+}
+
+/* Tela 11 */
 /* tela 8 */
 section.form-contact form {
   background-color: white;
