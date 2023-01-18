@@ -1587,6 +1587,164 @@ section.representatives-all .representatives-info{
 }
 
 /* Tela 11 */
+/* tela 8 */
+section.form-contact form {
+  background-color: white;
+  max-width: max(70%, 600px);
+  padding: 10px;
+  margin: 0 auto;
+}
+section.form-contact .text-contact {
+  padding: max(20px, 5vw)
+}
+section.form-contact .text-contact p {
+  margin-bottom: max(20px, 2vw);
+  font-size: max(10px, .7vw);
+  letter-spacing: .3vh;
+  text-transform: uppercase;
+  color: gray;
+}
+section.form-contact .text-contact h3 {
+  width: 30%;
+  font-size: max(20px, 2.5vw);
+  color: #000000;
+}
+
+section.form-contact form h3 {
+  font-size: max(20px, 2.5vw);
+  color: #000000;
+  text-align: center;
+  padding: max(10px, .9vw) 0 ;
+  margin-bottom: 1vw;
+  
+}
+section.form-contact form p {
+  font-size: max(12px, 1vw);
+  font-weight: bolder;
+  color: #1f1f1f;
+}
+
+section.form-contact form input[type=text]{
+  width: 100%;
+  font-size: max(12px, .8vw);
+  margin: max(10px, 1.2vw) 0;
+  padding: max(10px, 1.4vw);
+  border: max(1px, .1vw) solid #d5d5d5;
+  background-color: #f2f2f2;
+}
+.email-tel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.email-tel select, textarea {
+  background-color: #f2f2f2;
+}
+
+section.form-contact form .d50{
+  width: 48%;
+}
+section.form-contact form textarea {
+  width: 100%;
+  height: max(100px, 10vw);
+  font-size: max(14px, .9vw);
+  resize: none;
+  padding: max(10px, 1.4vw);
+  margin: max(10px, 1.2vw) 0;
+  border: max(1px, .1vw) solid #d5d5d5;
+}
+section.form-contact form input[type=submit] {
+  width: 100%;
+  font-size: max(10px, .9vw);
+  color: #f4f4f4;
+  background-color: #000051;
+  padding: max(10px, 1.4vw);
+  margin: max(10px, 1vw) 0;
+  border: 0;   
+}
+section.form-contact form span{
+  display: block;
+  text-align: center;
+  color: #484848;
+  font-size: max(10px, .9vw);
+}
+section.form-contact form span a{
+  color: black;
+  font-weight: bolder;
+}
+
+section.info .text-info .info{
+  width: 60%;
+}
+section.form-contact form select{
+  width: 100%;
+  font-size: max(14px, .9vw);
+  margin: max(10px, 1.2vw) 0;
+  padding: max(10px, 1.4vw);
+  border: max(1px, .1vw) solid #d5d5d5;
+}
+section.form-contact form select {
+  text-transform: uppercase;
+  color: #75758b;
+}
+section.form-contact form input[type=file]{
+  width: 100%;
+  font-size: max(12px, .8vw);
+  margin: max(10px, 1.2vw) 0;
+  padding: max(10px, 1.4vw);
+  border: max(1px, .1vw) solid #d5d5d5;
+  color: #a0a0a0;
+}
+
+.cards-location {
+  max-width: max(70%, 600px);
+  margin: 0 auto;
+}
+
+section .card-wrapper {
+  display: flex;
+  margin-top: max(30px, 4vw);
+}
+
+section .card {
+  box-shadow: 0 0 max(7px, .5vw) rgba(0, 0, 0, 0.308);
+  margin: 0 max(10px, 1vw);
+}
+
+section .card .map{
+  height: 35vh;
+  width: 100%;
+}
+
+section .text-map {
+  padding: max(10px, 3vw);
+}
+
+section .text-map h3{
+  font-size: max(20px, 1.8vw);
+}
+
+section .text-map p {
+  font-size: max(14px, 1.2vw);
+  margin-top: max(20px, 2.5vw);
+}
+
+section .social-media {
+  text-align: center;
+  font-size: max(15px, 1.5vw);
+  margin-top: max(20px, 3vw);
+}
+
+section .social-media .media-icons i{
+  margin: max(20px, 3vw) max(10px, .7vw);
+  font-size: max(14px, 1.5vw);
+  color: #05c3dd;
+}
+
+section .img-media {
+  margin-top: max(20px, 2vw);
+}
+
 
 @media screen and (max-width: 980px) {
   .footer-content .lists {
