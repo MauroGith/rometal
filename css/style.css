@@ -1299,7 +1299,7 @@ section.form-contact form p {
   color: #1f1f1f;
 }
 
-section.form-contact form input[type=text]{
+section.form-contact form input{
   width: 100%;
   font-size: max(12px, .8vw);
   margin: max(10px, 1.2vw) 0;
@@ -1307,12 +1307,12 @@ section.form-contact form input[type=text]{
   border: max(1px, .1vw) solid #d5d5d5;
   background-color: #f2f2f2;
 }
-.email-tel {
+.flex-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.email-tel select, textarea {
+.flex-form select, textarea {
   background-color: #f2f2f2;
 }
 
@@ -1357,11 +1357,9 @@ section.form-contact form select{
   margin: max(10px, 1.2vw) 0;
   padding: max(10px, 1.4vw);
   border: max(1px, .1vw) solid #d5d5d5;
-}
-section.form-contact form select {
-  text-transform: uppercase;
   color: #75758b;
 }
+
 section.form-contact form input[type=file]{
   width: 100%;
   font-size: max(12px, .8vw);
@@ -1376,48 +1374,55 @@ section.form-contact form input[type=file]{
   margin: 0 auto;
 }
 
-section .card-wrapper {
+.cards-location .card-wrapper {
   display: flex;
   margin-top: max(30px, 4vw);
 }
 
-section .card {
+.cards-location .card-wrapper .card {
+  width: 48%;
   box-shadow: 0 0 max(7px, .5vw) rgba(0, 0, 0, 0.308);
   margin: 0 max(10px, 1vw);
 }
 
-section .card .map{
+.cards-location .card .map{
   height: 35vh;
   width: 100%;
 }
 
-section .text-map {
+.cards-location .text-map {
   padding: max(10px, 3vw);
 }
 
-section .text-map h3{
-  font-size: max(20px, 1.8vw);
+.cards-location .text-map h3{
+  font-size: max(20px, 1.5vw);
+  margin-bottom: max(20px, 2vw);
 }
 
-section .text-map p {
+.cards-location .text-map p {
   font-size: max(14px, 1.2vw);
-  margin-top: max(20px, 2.5vw);
+  margin-top: max(10px, 1vw);
 }
 
-section .social-media {
+.social-media {
   text-align: center;
   font-size: max(15px, 1.5vw);
-  margin-top: max(20px, 3vw);
+  margin: max(30px, 5vw) 0;
 }
 
-section .social-media .media-icons i{
+.social-media .media-icons i{
   margin: max(20px, 3vw) max(10px, .7vw);
   font-size: max(14px, 1.5vw);
   color: #05c3dd;
 }
 
-section .img-media {
+.img-media {
   margin-top: max(20px, 2vw);
+}
+
+.img-media img {
+  height: max(20px, 2vw);
+  width: max(50px, 6vw);
 }
 
 
