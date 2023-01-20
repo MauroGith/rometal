@@ -1359,9 +1359,11 @@ section.options .options-wrapper .single-option .option-text:hover{
 /*Tela 6 */
 
 .product-line .video-wrapper {
-  margin: max(10px, 2vw) 0;
   position: relative;
   margin: 0 auto;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  background-size: 134%;
 }
 
 .product-line video {
@@ -1400,6 +1402,110 @@ section.options .options-wrapper .single-option .option-text:hover{
 .product-characteristics .img-characteristics h4 {
   font-size: max(14px, 1vw);
   font-weight: normal;
+}
+
+.finishes h3 {
+  margin: max(20px, 3vw) 0;
+  font-size: max(30px, 3vw);
+  text-align: center;
+}
+
+.finishes .finishes-wrapper {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.finishes-wrapper .finishes-option{
+  width: 33.3%;
+  padding: max(10px, 1vw);
+}
+
+.finishes .color {
+  height: max(40px, 4.5vw);
+}
+
+.finishes-wrapper .finishes-option p {
+  width: 85%;
+  position: relative;
+  bottom: max(10px, 1.5vw);
+  padding: max(10px, 1vw);
+  margin: 0 auto;
+  text-align: center;
+  font-size: max(15px, 1.5vw);
+  font-weight: bolder;
+  background: white;
+  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+}
+
+.product-line .download {
+  margin-bottom: max(20px, 4vw);
+}
+
+.download h3 {
+  margin: max(20px, 3vw) 0;
+  font-size: max(30px, 3vw);
+  text-align: center;
+  margin-bottom: max(20px, 2vw);
+}
+
+.download .download-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.download .download-card {
+  width: 50%;
+  padding: max(20px, 2vw);
+}
+
+.download .card-content {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: max(30px, 3vw) max(20px, 2vw);
+  background-color: white;
+  box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
+}
+
+.download .card-content .card-img {
+  width: 40%;
+  margin-right: max(20px, 3vw);
+}
+
+.download .card-content img {
+  width: 100%;
+}
+
+.download .card-content p {
+  font-size: max(15px, 1.5vw);
+  font-weight: bolder;
+}
+
+.download .download-icon {
+  position: absolute;
+  right: -4%;
+  bottom: -7%;
+  display: flex;
+  align-items: center;
+  height: max(50px, 8vw);
+  width: max(50px, 8vw);
+  border-radius: 50%;
+  background-color:#05c3dd;
+  color: white;
+  opacity: 0;
+  transition: ease .3s;
+}
+
+.download .download-icon i {
+  font-size: max(20px, 2.5vw);
+  padding-left: 27%;
+}
+
+.download .card-content:hover .download-icon{
+  opacity: 1;
 }
 
 .title-bg {
