@@ -598,6 +598,7 @@ section.know-more {
 section.contact {
   display: flex;
   flex-wrap: wrap;
+  margin-top: max(40px, 4vw);
 }
 
 .contact .contact-bg {
@@ -898,7 +899,7 @@ section.gallery .gallery-slider {
 }
 
 .patents {
-  padding: max(20px, 3vw) 0;
+  padding-top: max(20px, 3vw);
   display: flex;
   flex-wrap: wrap;
 }
@@ -1027,66 +1028,6 @@ section.gallery .gallery-slider {
   content: '• '
 }
 
-.social-projects h2 {
-  font-size: max(25px, 3vw);
-  margin: max(20px, 3vw) 0;
-  text-align: center;
-}
-
-.project-slider .project-card {
-  padding: max(20px, 2vw);
-}
-
-.project-slider .project-card .card-content {
-  min-height: 30vw;
-  box-shadow: 0 0 max(3px, .5vw) rgba(0, 0, 0, 0.24);
-}
-
-.project-card .card-content img {
-  width: 100%;
-}
-
-.project-card .card-content .card-text {
-  padding: max(20px, 1.5vw);
-}
-
-.project-card .card-content span {
-  font-size: max(10px, .6vw);
-  letter-spacing: .2vw;
-  color: #5e5e5e;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-.project-card .card-content h4 {
-  font-size: max(20px, 2vw);
-  margin: max(10px, 1vw) 0;
-}
-
-.project-card .card-content a {
-  font-size: max(14px, 1vw);
-  color: black;
-  font-weight: bold;
-}
-
-.social-projects .arrows {
-  width: max(110px, 10vw);
-  margin: 0 auto;
-  padding: max(5px , 2vw) 0;
-}
-
-.arrows .project-left {
-  border-color: #ccc;
-}
-
-.arrows .project-right {
-  border: none;
-  background-color: #dcf7fa;
-  width: max(64px, 6vw);
-  height: max(32px, 3vw);
-  border-radius: max(10px, 1.5vw);
-}
-
 /* Tela 3 */
 .all-products{
   display: flex;
@@ -1097,10 +1038,7 @@ section.gallery .gallery-slider {
 .all-products .slide-wrapper{
   width: 31%;
   margin: max(10px, 1vw) 0;
-}
-
-.slide-wrapper {
-  height: max(43vw, 60vh);
+  height: max(40vw, 60vh);
   position: relative;
   overflow: hidden;
 }
@@ -1124,15 +1062,6 @@ section.gallery .gallery-slider {
   transform: scale(1.1);
 }
 
-.toggle-arrow {
-  transition: 1s;
-}
-
-.slide-wrapper .slide-bg:hover .toggle-arrow{
-  opacity: 0;
-  display: none;
-}
-  
 .slide-bg .text-wrapper {
   color: white;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, transparent 40%);
@@ -1154,7 +1083,7 @@ section.gallery .gallery-slider {
 }
 
 .slide-wrapper .slide-bg:hover .hidden-text{
-  height: 38%;
+  height: 40%;
 }
 
 .slide-bg .text-wrapper h2 {
@@ -1536,6 +1465,112 @@ section.options .options-wrapper .single-option .option-text:hover{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.technical-info .table-select {
+  box-shadow: 0 max(2px, .1vw) max(10px, .4vw) rgba(0, 0, 0, 0.2);
+}
+
+.technical-info .table-select ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technical-info .table-select ul li{
+  font-size: max(14px, 1vw);
+  font-weight: bold;
+  color: #b8b8b8;
+  text-transform: uppercase;
+  padding: max(10px, 2vw) max(10px, 3vw) max(10px, 2vw) 0;
+  cursor: pointer;
+}
+
+.technical-info .table-select ul .selected {
+  border-bottom: max(2px, .2vw) solid #05c3dd;
+  color: black;
+}
+
+.technical-info .table-wrapper {
+  overflow-x: auto;
+}
+
+.technical-info table {
+  text-align: center;
+  margin: max(30px, 3vw) 0;
+  border-collapse: collapse;
+  padding: max(10px, 1vw);
+  font-size: max(14px, 1vw);
+}
+
+.technical-info table thead {
+  color: white;
+  background-color: #000051;
+  border: max(1px, .1vw) solid #000051;
+}
+
+.technical-info table tbody {
+  border: max(1px, .1vw) solid #ccc;
+  padding: max(10px, 1vw);
+}
+
+.technical-info table td {
+  padding: max(10px, 1vw);
+  border-bottom: max(1px, .1vw) solid #ccc;
+}
+
+.technical-info table .item-image {
+  width: 15%;
+}
+
+.technical-info table .item-image img {
+  width: 100%;
+}
+
+.technical-info table .description {
+  width: 30%;
+}
+
+.technical-info table .action {
+  width: 10%;
+}
+
+.technical-info table .finishing-colors {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.finishing-colors .item-color .color-theme {
+  position: relative;
+  width: max(15px, 2vw);
+  height: max(15px, 2vw);
+  border-radius: 50%;
+  margin: max(2px, .1vw);
+}
+
+.color-theme:hover  .color-name {
+  display: block !important;
+}
+
+.finishing-colors .color-name {
+  position: absolute;
+  font-size: max(8px, .6vw);
+  padding: max(5px, .2vw);
+  top: -40%;
+  left: 60%;
+  border: max(1px, .1vw) solid black;
+  background-color: white;
+  display: none;
+  z-index: 1;
+}
+
+.technical-info table td a p{
+  font-size: max(10px, .7vw);
+  text-decoration: none;
+  color: white;
+  background-color: #000051;
+  padding: max(5px, .8vw) max(8px, 1.5vw);
+  border-radius: max(10px, 1.5vw);
 }
 
 section.our-kits {

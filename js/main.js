@@ -42,21 +42,6 @@ $('.patented-products').slick({
   nextArrow: '.patented-right',
 })
 
-$('.project-slider').slick({
-  prevArrow: '.project-left',
-  nextArrow: '.project-right',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1
-      }
-    },
-  ]
-})
-
-
 
 
 let triggers = () => {
