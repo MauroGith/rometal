@@ -29,20 +29,31 @@ footer ul, header ul, main ul{
 }
 
 section.welcome {
+  padding-top: max(100px, 5vw);
   background-size: 17%;
-  background-position: right;
+  background-position: right bottom;
   background-repeat: no-repeat;
   background-color: #F2F2F2;
   z-index: 1;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 header .header-content {
+  transition: ease .4s;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: max(80px, 1vw);
   padding:max(10px, 1vw) max(15px, 5vw);
   background-color: white;
+  box-shadow: 0 max(1px, .1vw) max(5px, .5vw) rgba(0, 0, 0, 0.2);
 }
 
 .header-content .menu {
@@ -95,7 +106,6 @@ header .header-content {
   right: 0;
   top: 0;
   width: 25vw;
-  height: 100vh;
   overflow: auto;
   background-color: white;
   z-index: 10;
@@ -144,8 +154,9 @@ header .header-content {
 }
 
 .transparent-header .header-content {
+  box-shadow: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -1118,6 +1129,10 @@ section.gallery .gallery-slider {
 /* Tela 3 */
 
 /* Tela 4 */
+section.product-line {
+  padding-top: max(100px, 5vw);
+}
+
 section.product-line .product-line-info{
   display: flex;
   align-items: center;
@@ -1691,6 +1706,8 @@ section.all-downloads .download-category .download-table {
   color: #989898;
 }
 .download-category .download-table tbody td a{
+  display: inline-block;
+  text-align: center;
   font-size: max(12px, 1vw);
   text-decoration: none;
   background-color: #000051;
@@ -1700,6 +1717,11 @@ section.all-downloads .download-category .download-table {
 }
 .download-category .download-table tbody td a i{
   padding-left: max(2px, .4vw);
+}
+
+.download-category .download-table .description {
+  width: 74%;
+  padding-right: max(20px, 2vw);
 }
 /* Tela 7 */
 
@@ -1739,7 +1761,7 @@ section.measurements-area .form-info h2{
   height: max(10px, 3.1vw);
   background: #05c3dd;
   display: block;
-  border-radius: 100px;
+  border-radius: max(3px, 2vw);
   position: relative;
 }
 
@@ -1751,7 +1773,7 @@ section.measurements-area .form-info h2{
   width: max(15px, 3.5vw);
   height: max(10px, 2.4vw);
   background: white;
-  border-radius: 90px;
+  border-radius: max(3px, 2vw);
   transition: 0.3s;
 }
 
@@ -1760,16 +1782,16 @@ section.measurements-area .form-info h2{
 }
 
 .form-info input:checked + label:after {
-  left: calc(100% - 5px);
+  left: calc(100% - 3px);
   transform: translateX(-100%);
 }
 
 .form-info label:active:after {
-  width: 130px;
+  width: max(20px, 5vw);
 }
 
 .measurements-form form {
-  max-width: 60%;
+  max-width: max(600px, 60%);
   box-shadow: max(2px, .1vw) max(2px, .1vw) max(10px, 1vw) rgba(0, 0, 0, 0.2);
   margin: max(20px, 4vw) auto;
   padding: max(20px, 3vw);
@@ -1879,26 +1901,15 @@ section.representatives-all .representatives-info{
 
 
 /* tela 8 */
+section.form-contact {
+  padding-top: max(20px, 3vw);
+}
+
 section.form-contact form {
   background-color: white;
   max-width: max(70%, 600px);
   padding: 10px;
   margin: 0 auto;
-}
-section.form-contact .text-contact {
-  padding: max(20px, 5vw)
-}
-section.form-contact .text-contact p {
-  margin-bottom: max(20px, 2vw);
-  font-size: max(10px, .7vw);
-  letter-spacing: .3vh;
-  text-transform: uppercase;
-  color: gray;
-}
-section.form-contact .text-contact h3 {
-  width: 30%;
-  font-size: max(20px, 2.5vw);
-  color: #000000;
 }
 
 section.form-contact form h3 {
@@ -2062,6 +2073,8 @@ section.form-contact form input[type=file]{
   
   .header-content .side-menu {
     width: 100%;
+    height: 100vh;
+    text-align: center;
   }
 
   .header-content .side-menu .mobile {
@@ -2285,6 +2298,10 @@ section.form-contact form input[type=file]{
   .patents-info .content ul {
     width: 100%;
     padding: 20px 0;
+  }
+
+  .measurements-form form .form-wrapper .d-30 {
+    width: 50%;
   }
 }
 

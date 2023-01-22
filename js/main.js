@@ -1,6 +1,15 @@
+$('#transparent-header').ready(function() {
+  if($('#transparent-header')[0]) {
+    $(window).scroll(function(){
+      window.scrollY > 100 ? $('#transparent-header')[0].classList.remove('transparent-header') : $('#transparent-header')[0].classList.add('transparent-header')
+    })
+  }
+})
+
 $('.show-side-menu').click(function(){
   $('.side-menu').slideToggle()
 })
+
 $('.close-side-menu').click(function() {
   $('.side-menu').slideToggle()
 })
@@ -91,5 +100,3 @@ $('.wrapper-relateds').slick({
   nextArrow: '.related-right',
   slidesToShow: 4,
 })
-
-
