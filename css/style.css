@@ -28,6 +28,14 @@ footer ul, header ul, main ul{
   background-repeat: no-repeat;
 }
 
+section.welcome {
+  background-size: 17%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #F2F2F2;
+  z-index: 1;
+}
+
 header .header-content {
   display: flex;
   justify-content: space-between;
@@ -669,7 +677,7 @@ section.contact {
 
 .span-h1 {
   padding: max(30px, 3vw) 0;
-  background-color: #F2F2F2;
+  /* background-color: #F2F2F2; */
 }
 
 .span-h1 span {
