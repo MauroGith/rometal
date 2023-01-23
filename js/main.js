@@ -51,6 +51,33 @@ $('.patented-products').slick({
   nextArrow: '.patented-right',
 })
 
+$('.wrapper-kits').slick({
+  prevArrow: '.arrow-left',
+  nextArrow: '.arrow-right',
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+})
+$('.wrapper-relateds').slick({
+  prevArrow: '.related-left',
+  nextArrow: '.related-right',
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+})
+
 
 
 let triggers = () => {
@@ -90,13 +117,3 @@ $('.values-trig').click(function(){
   $('.mission')[0].style.display = "none"
 })
 
-$('.wrapper-kits').slick({
-  prevArrow: '.arrow-left',
-  nextArrow: '.arrow-right',
-  slidesToShow: 4,
-})
-$('.wrapper-relateds').slick({
-  prevArrow: '.related-left',
-  nextArrow: '.related-right',
-  slidesToShow: 4,
-})
