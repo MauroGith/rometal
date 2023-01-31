@@ -1846,6 +1846,7 @@ section.representatives-all{
 }
 section.representatives-all .filter-wrapper{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: max(20px, 4vw) 0;
@@ -2437,6 +2438,20 @@ section.form-contact form input[type=file]{
 
   .representatives-info .single-info {
     width: 80%;
+    margin: 10px auto;
+  }
+
+  section.representatives-all .filter-wrapper {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .filter-wrapper .filter {
+    width: 100%;
+  }
+
+  .filter-wrapper .filter select {
+    width: 100%;
     margin: 10px auto;
   }
 }
