@@ -1706,7 +1706,7 @@ section.all-downloads .download-category .download-table {
   display: flex;
 }
 .download-category .download-table tbody td img{
-  max-width: max(4.5vw, 55px);
+  max-width: max(4.5vw, 80px);
   margin-right: max(5px, 1vw);
 }
 .download-category .download-table tbody td p{
@@ -2421,6 +2421,10 @@ section.form-contact form input[type=file]{
   section.all-downloads .download-category .download-table {
     width: 100%;
     margin: 20px 0;
+  }
+
+  .download-category .download-table tbody td.d-flex {
+    flex-direction: column;
   }
 
   section.form-contact form .d50 { 
